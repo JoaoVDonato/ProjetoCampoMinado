@@ -68,7 +68,7 @@ public class Campo {
 
 
     public boolean isMarcado() {
-        return marcad;
+        return marcado;
     }
 
     public boolean isAberto(){
