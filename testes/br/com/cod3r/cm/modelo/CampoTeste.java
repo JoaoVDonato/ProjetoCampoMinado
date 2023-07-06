@@ -87,7 +87,7 @@ public class CampoTeste {
     }
     @Test
     void testeAbrirComVizinhos2() {
-        Campo campo11 = new Campo(1, 1);
+        Campo campo11 = new Campo(3, 1);
         Campo campo12 = new Campo(1, 1);
         campo12.minar();
 
