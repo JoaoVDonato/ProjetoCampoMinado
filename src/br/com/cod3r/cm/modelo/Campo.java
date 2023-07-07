@@ -70,6 +70,10 @@ public class Campo {
         return marcado;
     }
 
+    void setAberto(boolean aberto) {
+        this.aberto = aberto;
+    }
+
     public boolean isAberto(){
         return aberto;
     }
@@ -105,7 +109,7 @@ public class Campo {
 
     public String toString() {
         if(marcado) {
-            return "x";
+            return "X";
         }else if(aberto && minado){
             return "*";
         }else if(aberto && minasNaVizinhaca() > 0) {
