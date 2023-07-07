@@ -74,7 +74,7 @@ public class CampoTeste {
         });
     }
     @Test
-    void testeAbrirComVizinhos() {
+    void testeAbrirComVizinhos1() {
         Campo campo11 = new Campo(1, 1);
 
         Campo campo22 = new Campo(2, 2);
@@ -100,4 +100,24 @@ public class CampoTeste {
 
         assertTrue(campo22.isAberto() && campo11.isFechado());
     }
+
+    @Test
+    void testeObjetivoConquistado() {
+        campo.minar();
+        campo.alternarMarcacao();
+        assertTrue(campo.objetivoAlcancado());
+    }
+    @Test
+    void testeReinicializar(){
+        campo.minar();
+        campo.alternarMarcacao();
+        campo.abrir();
+        campo.reiniciar();
+        assertTrue(campo.isFechado());
+
+    }
+
+
+
+
 }
